@@ -1,0 +1,38 @@
+*   Trying 169.254.169.254...
+* TCP_NODELAY set
+* Connected to 169.254.169.254 (169.254.169.254) port 80 (#0)
+> GET /latest/dynamic/instance-identity/document/ HTTP/1.1
+> Host: 169.254.169.254
+> User-Agent: curl/7.55.1
+> Accept: */*
+> 
+* HTTP 1.0, assume close after body
+< HTTP/1.0 200 OK
+< Content-Type: text/plain
+< Accept-Ranges: bytes
+< ETag: "3706592664"
+< Last-Modified: Mon, 22 Oct 2018 18:49:54 GMT
+< Content-Length: 473
+< Connection: close
+< Date: Mon, 22 Oct 2018 19:10:12 GMT
+< Server: EC2ws
+< 
+{ [473 bytes data]
+* Closing connection 0
+{
+  "privateIp" : "10.0.2.75",
+  "version" : "2017-09-30",
+  "devpayProductCodes" : null,
+  "marketplaceProductCodes" : null,
+  "region" : "us-east-1",
+  "kernelId" : null,
+  "ramdiskId" : null,
+  "billingProducts" : null,
+  "instanceId" : "i-06f1c05973f655ac4",
+  "instanceType" : "t2.micro",
+  "availabilityZone" : "us-east-1b",
+  "accountId" : "908190378721",
+  "architecture" : "x86_64",
+  "imageId" : "ami-0160fcd241869735c",
+  "pendingTime" : "2018-10-22T17:34:15Z"
+}
